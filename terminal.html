@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terminal Interaktif</title>
+    <link rel="stylesheet" href="assets/css/terminal.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav>
+        <ul>
+            <li><a href="index.html">🏠 Home</a></li>
+            <li><a href="materi/html.html">📄 HTML</a></li>
+            <li><a href="materi/css.html">🎨 CSS</a></li>
+            <li><a href="materi/javascript.html">⚡ JavaScript</a></li>
+            <li><a href="terminal.html" class="active">💻 Terminal</a></li>
+        </ul>
+    </nav>
+
+    <!-- Terminal Container -->
+    <section class="terminal-container">
+        <h2>💻 Terminal Interaktif</h2>
+        <p>Ketik kode JavaScript dan tekan **Run** untuk mengeksekusi!</p>
+
+        <textarea id="codeInput" placeholder="console.log('Halo Dunia!');"></textarea>
+        <button onclick="runCode()">Run</button>
+
+        <div id="output"></div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 Terminal Interaktif</p>
+    </footer>
+
+    <script>
+        function runCode() {
+            let code = document.getElementById("codeInput").value;
+            try {
+                let result = eval(code);
+                document.getElementById("output").innerHTML = "Output: " + result;
+            } catch (error) {
+                document.getElementById("output").innerHTML = "Error: " + error;
+            }
+        }
+    </script>
+
+</body>
+</html>

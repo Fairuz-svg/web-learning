@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Materi JavaScript</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 Home</a></li>
+            <li><a href="html.html">📄 HTML</a></li>
+            <li><a href="css.html">🎨 CSS</a></li>
+            <li><a href="javascript.html" class="active">⚡ JavaScript</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1>Belajar JavaScript dari Dasar Hingga Mahir</h1>
+    </header>
+    
+    <main>
+        <section>
+            <h2>1. Pengenalan JavaScript</h2>
+            <p>JavaScript adalah bahasa pemrograman yang digunakan untuk membuat web interaktif.</p>
+            <pre class="code-box">
+console.log("Halo, Dunia!");
+            </pre>
+        </section>
+
+        <section>
+            <h2>2. Variabel dan Tipe Data</h2>
+            <p>Contoh variabel dalam JavaScript:</p>
+            <pre class="code-box">
+let nama = "Budi";  // String
+let umur = 25;       // Number
+let aktif = true;    // Boolean
+            </pre>
+        </section>
+
+        <section>
+            <h2>3. Fungsi dan Event</h2>
+            <p>Contoh fungsi sederhana:</p>
+            <pre class="code-box">
+function sapa() {
+    alert("Halo, Selamat Datang!");
+}
+            </pre>
+
+            <p>Contoh event (coba klik tombol di bawah!):</p>
+            <button class="js-btn" onclick="sapa()">Klik Saya</button>
+        </section>
+
+        <!-- Tombol kembali ke Home -->
+        <button class="back-btn" onclick="window.location.href='../index.html'">⬅ Kembali ke Home</button>
+    </main>
+
+    <footer>
+        <p>Materi JavaScript © 2025</p>
+    </footer>
+
+    <script>
+        function sapa() {
+            alert("Halo, Selamat Datang!");
+        }
+    </script>
+
+</body>
+</html>

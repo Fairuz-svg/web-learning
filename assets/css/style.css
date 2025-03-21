@@ -1,0 +1,137 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1e1e1e;
+    color: #ffffff;
+    text-align: center;
+}
+
+/* Navbar */
+nav {
+    background: #e74c3c;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover, 
+nav ul li a.active {
+    background: #c0392b;
+}
+
+/* Header */
+header {
+    background: url('https://i.pinimg.com/736x/d5/97/e4/d597e427fdf7afa51dd4d3b224a296e1.jpg') no-repeat center center/cover;
+    padding: 100px 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+header h1 {
+    font-size: 2em;
+}
+
+/* Main */
+main {
+    padding: 20px;
+}
+
+section {
+    background: #333;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 800px;
+    text-align: left;
+}
+
+section h2 {
+    color: #e74c3c;
+}
+
+section p {
+    font-size: 1.1em;
+}
+
+/* Kode Box */
+.code-box {
+    background: #111;
+    color: #0f0;
+    padding: 10px;
+    border-radius: 5px;
+    font-family: "Courier New", monospace;
+    overflow-x: auto;
+    text-align: left;
+}
+
+/* Tombol Interaktif */
+.js-btn {
+    background: #e74c3c;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    font-size: 1em;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    display: block;
+    margin: 10px auto;
+}
+
+.js-btn:hover {
+    background: #c0392b;
+}
+
+/* Tombol Kembali */
+.back-btn {
+    background: #e74c3c;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    font-size: 1em;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    display: block;
+    margin: 20px auto;
+}
+
+.back-btn:hover {
+    background: #c0392b;
+}
+
+/* Footer */
+footer {
+    background: #444;
+    padding: 10px;
+    margin-top: 20px;
+}
